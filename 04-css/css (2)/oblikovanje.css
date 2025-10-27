@@ -34,9 +34,14 @@ h2 {margin-top: 2em;
         width:40% ;
         text-align: left;
         float: right;
-        margin-left: 2em }   
+        margin-left: 2em
+     }   
 .slika img {width: 100% ;
-           height: auto;}
+           height: auto;
+           border-radius:50%;}
+.slika p:last-child {font-size: 0,8em;
+                     background-color: cadetblue;
+                    margin: 0,1em;}
 
 /*  Odstranimo podčrtovanje povezav in outline (ta se včasih pokaže kot kvadratek okrog povezave)  */
 a { text-decoration: none; outline:none; }
@@ -45,6 +50,9 @@ a:link { color:#cc0000; }
 a:visited { color:#660066; }
 a:hover { color:#660066; }
 a:active { color:#990000; outline:none; }
+a::before {
+  content: "🔗";
+}
 
 code {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
